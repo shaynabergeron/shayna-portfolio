@@ -20,6 +20,7 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
+  /** TODO: Add other elements (navbar, etc) */
   return (
     <Router>
       <div className="App" id={load ? "no-scroll" : "scroll"}>

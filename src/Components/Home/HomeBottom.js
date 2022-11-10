@@ -7,9 +7,6 @@ import { FaLinkedinIn } from "react-icons/fa";
 /** Style Sheet Import */
 import "./HomeBottom.css";
 
-/** TODO: Finish rest of component, for main homepage component
- * TODO: Add images
- */
 const HomeBottom = () => {
   return (
     <Container fluid className="home-about-section" id="about">
