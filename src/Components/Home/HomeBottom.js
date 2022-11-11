@@ -6,6 +6,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 /** Style Sheet Import */
 import "./HomeBottom.css";
+import "../../style.css";
 
 const HomeBottom = () => {
   return (
@@ -45,11 +46,11 @@ const HomeBottom = () => {
               </i>
             </p>
           </Col>
-          <Col md={4} className="myAvtar">
-            {/* <Tilt>
+          {/* <Col md={4} className="myAvtar">
+            <Tilt>
               <img src={myImg} className="img-fluid" alt="avatar" />
-            </Tilt> */}
-          </Col>
+            </Tilt>
+          </Col> */}
         </Row>
         <Row>
           <Col md={12} className="home-about-social">

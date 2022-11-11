@@ -2,8 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "./../../Assests/home-main.svg";
 import Particle from "./../Particle";
-import Home2 from "./HomeBottom";
 import Type from "./Typewriter";
+
+/** Style Sheet Import */
+import "./Home.css";
+import HomeBottom from "./HomeBottom";
 
 function Home() {
   return (
@@ -41,7 +44,7 @@ function Home() {
           </Row>
         </Container>
       </Container>
-      <Home2 />
+      <HomeBottom />
     </section>
   );
 }
