@@ -8,14 +8,14 @@ import {
 } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from "./Components/Navbar";
+import Navbar from "./Components/Navbar/Navbar";
 
 import "./App.css";
 import "./style.css";
 import "../src/Components/Preloader.css";
-import TopScroll from "./Components/TopScroll";
-import Preloader from "./Components/Preloader";
-import Footer from "./Components/Footer";
+import TopScroll from "./Components/Scrollbar/TopScroll";
+import Preloader from "./Components/Preloader/Preloader";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   const [load, upadateLoad] = useState(true);

@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "./../../Assests/home-main.svg";
-import Particle from "./../Particle";
+import Particle from "../Particle/Particle";
 import Type from "./Typewriter";
 
 /** Style Sheet Import */
