@@ -10,8 +10,12 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./Components/Navbar";
 
+import "./App.css";
 import "./style.css";
+import "../src/Components/Preloader.css";
 import TopScroll from "./Components/TopScroll";
+import Preloader from "./Components/Preloader";
+import Footer from "./Components/Footer";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -27,12 +31,15 @@ function App() {
   /** TODO: Add other elements (navbar, etc) */
   return (
     <Router>
+      <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
         <TopScroll />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
