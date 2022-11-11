@@ -7,6 +7,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import "./HomeBottom.css";
 import "../../style.css";
 
+/** TODO: Fix problem with connect me links on bottom buttons */
 const HomeBottom = () => {
   return (
     <Container fluid className="home-about-section" id="about">
