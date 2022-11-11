@@ -10,8 +10,8 @@ import HomeBottom from "./HomeBottom";
 
 function Home() {
   return (
-    <section>
-      <Container fluid className="home-section" id="home">
+    <div className="home-section">
+      <div fluid id="home">
         <Particle />
         <Container className="home-content">
           <Row>
@@ -43,9 +43,9 @@ function Home() {
             </Col>
           </Row>
         </Container>
-      </Container>
+      </div>
       <HomeBottom />
-    </section>
+    </div>
   );
 }
 
