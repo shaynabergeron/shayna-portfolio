@@ -8,6 +8,10 @@ import {
 } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Navbar from "./Components/Navbar";
+
+import "./style.css";
+import TopScroll from "./Components/TopScroll";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -24,6 +28,8 @@ function App() {
   return (
     <Router>
       <div className="App" id={load ? "no-scroll" : "scroll"}>
+        <Navbar />
+        <TopScroll />
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
